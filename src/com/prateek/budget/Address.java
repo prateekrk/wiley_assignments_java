@@ -1,7 +1,5 @@
-package com.prateek;
+package com.prateek.budget;
 
-
-import java.util.*;
 
 class Address{
     String city,zipcode;
@@ -10,4 +8,3 @@ class Address{
         this.zipcode=zipcode;
     }
 }
-

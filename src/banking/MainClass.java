@@ -35,10 +35,11 @@ public class MainClass {
         accounts.put(12304,new Operations().debit(12304,2000,accounts.get(a1.getAcId())));
 
 
-
-        transactions.stream()
-                .filter(transactions1 -> transactions1.getAcId()==a1.getAcId())
-                .forEach(t->System.out.println(t.toString()));
-
+        for(Integer i:accounts.keySet()) {
+            System.out.println("----------History of "+i+"-----------");
+            transactions.stream()
+                    .filter(transactions1 -> transactions1.getAcId() == i)
+                    .forEach(transactions1 -> System.out.println(transactions1.toString()));
+        }
     }
 }

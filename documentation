@@ -1,0 +1,13 @@
+!---------------------------------DOCUMENTATION---------------------------------!
+*Class Account-> String account_id, double Balanace
+
+*Class Operations-> Credit(), Debit():
+      --Credit() get account_id from Account and add balance by credit amount
+      --Debit() get account_id from Account and add balance by debit amount
+      --History() store prev transactions of an account using hash map
+
+* Main class:
+       --Accounts
+       -- ArrayList of Accounts
+       --Operations
+       --

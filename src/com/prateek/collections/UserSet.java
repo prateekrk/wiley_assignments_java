@@ -19,7 +19,7 @@ public class UserSet {
 
         System.out.println("\n-------------------------Case 2-------------------------");
 
-        Set<Type>s1=new TreeSet();
+        Set<Type>s1=new TreeSet(new SortType2());
         s1.add(new Type(new User(1,"Adam")));
         s1.add(new Type(new User(2,"User2")));
         s1.add(new Type(1));
@@ -30,7 +30,7 @@ public class UserSet {
 
         System.out.println("\n-------------------------Case 3-------------------------");
 
-        Set<Type>s3=new TreeSet();
+        Set<Type>s3=new TreeSet(new SortType3());
         s3.add(new Type(new User(1,"Adam")));
         s3.add(new Type(new User(2,"User2")));
         s3.add(new Type(1));
@@ -41,7 +41,7 @@ public class UserSet {
 
     }
 }
-class Type implements Comparable<Type> {
+class Type  {
     Object o;
 
     public Type(Object o) {
@@ -50,49 +50,8 @@ class Type implements Comparable<Type> {
 
     @Override
     public String toString() {
-        if(this.o instanceof User){
-            User u=(User) this.o;
-            return String.valueOf(u.getUser_name());
-        }
+
         return String.valueOf(this.o);
-    }
-
-    @Override
-    public int compareTo(Type next) {
-        if(this.o instanceof  Integer){
-            return 1;
-
-        }
-        else if(this.o instanceof User){
-            User u1=(User)next.o;
-            if(next.o instanceof User){
-                User u2=(User) next.o;
-                return u1.getUser_name().compareTo(u2.getUser_name());
-            }
-            else if(next.o instanceof  Integer){
-                return 1;
-            }
-
-            return 0;
-
-        }
-        else if(this.o instanceof String){
-
-            if(next.o instanceof  String){
-                return this.o.toString().compareTo(next.toString());
-            }
-            else if(next.o instanceof User){
-                User u2=(User) next.o;
-                return this.o.toString().compareTo(u2.getUser_name());
-            }
-            else if(next.o instanceof  Integer){
-                return 1;
-            }
-
-            return 0;
-
-        }
-        return 0;
     }
 }
 
@@ -202,6 +161,48 @@ class SortType2 implements  Comparator<Type> {
             return 0;
         }
 
+        return 0;
+    }
+}
+
+class SortType3 implements Comparator<Type>{
+
+    @Override
+    public int compare(Type o1, Type o2) {
+        if(o1.o instanceof User) {
+            if(o2.o instanceof User){
+                return ((User) o1.o).getUser_name().compareTo(((User) o2.o).getUser_name());
+            }
+            else if(o2.o instanceof String)
+                return ((User) o1.o).getUser_name().compareTo(o2.o.toString());
+            else if(o2.o instanceof Integer) {
+                return -1;
+            }
+            return 0;
+        }
+        else if(o1.o instanceof String) {
+            if(o2.o instanceof User)
+                return (o1.o.toString()).compareTo((((User) o2.o).getUser_name()));
+            else if(o2.o instanceof  String){
+                return o1.toString().compareTo(o2.toString());
+            }
+            else if(o2.o instanceof Integer) {
+                return -1;
+            }
+            return 0;
+        }
+        else if(o1.o instanceof Integer){
+            if(o2.o instanceof Integer){
+                return (int) o1.o-(int) o2.o;
+            }
+            if(o2.o instanceof  String){
+                return 1;
+            }
+            else if(o2.o instanceof User){
+                return 1;
+            }
+            return 0;
+        }
         return 0;
     }
 }

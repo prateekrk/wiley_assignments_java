@@ -58,14 +58,17 @@ public class ClassSets {
         treeSet.add(new MyObject("0"));
         treeSet.add(new MyObject("a"));
         treeSet.add(new MyObject("hey0"));
+        treeSet.add(new MyObject(null));
 
         treeSet.forEach(e->System.out.println(e.toString()));
 
 
 
-        ArrayList arl = new ArrayList();
-        arl.add("ArrayList item 1");
-        arl.add(2);
+//        Set t=new TreeSet();
+//        for(int i=0;i<=1000;i++){
+//            t.add(i);
+//        }
+//        t.add(-1);
 
 
     }

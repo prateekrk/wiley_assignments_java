@@ -1,5 +1,6 @@
 package com.prateek.streams;
 
+import javax.swing.text.html.Option;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,10 +22,6 @@ public class ShowRoom {
                 .map(Car::new)
                 .collect(Collectors.toList());
         cars.forEach(e->System.out.println(e.toString()));
-        cars.stream()
-                .sorted(Comparator.comparingInt(s -> s.topSpeed))
-                .forEach(System.out::println);
-
 
     }
 

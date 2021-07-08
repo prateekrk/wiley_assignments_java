@@ -1,13 +1,18 @@
 !---------------------------------DOCUMENTATION---------------------------------!
-*Class Account-> String account_id, double Balanace
+*Class Account-> Integer account_id, double Balance.
 
 *Class Operations-> Credit(), Debit():
       --Credit() get account_id from Account and add balance by credit amount
+        And record it in transactions list
       --Debit() get account_id from Account and add balance by debit amount
-      --History() store prev transactions of an account using hash map
+        And record it in transactions list
+*Class Transactions ->
+       --String transaction_type,Double amount,Integer account_id
+       -- Constructor() model for transaction
 
 * Main class:
+       --List of transactions
        --Accounts
-       -- ArrayList of Accounts
+       -- HashMap of Accounts
        --Operations
-       --
+

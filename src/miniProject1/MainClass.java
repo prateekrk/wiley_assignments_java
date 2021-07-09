@@ -1,5 +1,7 @@
 package miniProject1;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -30,9 +32,11 @@ public class MainClass {
            addresses.addAll(u.addresses);
        }
 
-       for(Address a:addresses){
-           map.put(a,users.stream().filter(u->u.addresses.stream().anyMatch(a1->a1.equals(a))).collect(Collectors.toList()));
+       for(Address a:addresses) {
+           map.put(a, users.stream().filter(u -> u.addresses.stream().anyMatch(a1 -> a1.equals(a))).collect(Collectors.toList()));
+           System.out.println(a.getCity() + " " + a.getZip());
+
        }
        System.out.println(map);
-   }
+     }
 }

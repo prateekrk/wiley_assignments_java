@@ -14,11 +14,9 @@ public class budget {
         Project p=new Project(1023,1000,"KIAS");
 
         //employee1
-        User u1=new User("e1","1");
-        User u2=new User("e1","1");
-        User u3=new User("e1","1");
 
-        Employee1 e1=new Employee1(u1);
+
+        Employee1 e1=new Employee1("e1","1");
 
         e1.setSalary(500);
         e1.setProject(p);
@@ -26,14 +24,14 @@ public class budget {
 
 
         //employee2
-        Employee1 e2=new Employee1(u2);
+        Employee1 e2=new Employee1("e2","2");
         e2.setSalary(400);
         e2.setProject(p);
 
 
 
         //employee3
-        Employee1 e3=new Employee1(u3);
+        Employee1 e3=new Employee1("e3","3");
         e3.setSalary(300);
         e3.setProject(p);
 
@@ -43,9 +41,10 @@ public class budget {
 
 
         List<Employee1> emp=user.stream()
-                .filter(u->u instanceof Employee1).map(Employee1::new)
+                .filter(u->u instanceof Employee1).map(u->(Employee1) u)
                 .collect(Collectors.toList());
-        System.out.println(emp.get(1).getName());
+        System.out.println(emp.get(1).getProject().getProjectId());
+
 //        for(User u: user){
 //            if(u instanceof Employee1){
 //                Employee1 e=(Employee1) u;

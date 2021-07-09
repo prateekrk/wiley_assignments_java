@@ -4,9 +4,11 @@ class Employee1 extends User{
     int salary;
     Address address;
     Project project;
-    Employee1(User u){
-        super(u.getName(),u.getId());
+    public Employee1(String eid,String ename){
+        this.ename=ename;
+        this.eid=eid;
     }
+    public  Employee1(){}
 
     public void setAddress(Address address) {
         this.address = address;
@@ -31,6 +33,7 @@ class Employee1 extends User{
     public int getSalary() {
         return salary;
     }
+
     public String toString(){
         return this.eid+" "+this.salary+" "+this.project.getProjectId();
 

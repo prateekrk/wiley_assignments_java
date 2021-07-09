@@ -33,6 +33,5 @@ public class Address implements Comparable {
     @Override
     public int compareTo(Object o) {
         return this.zip- ((Address) o).zip;
-
     }
 }

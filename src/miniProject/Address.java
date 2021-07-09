@@ -32,6 +32,6 @@ public class Address implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        return this.city.compareTo(((Address) o).city);
+        return ((Address) o).getZip()-this.zip;
     }
 }

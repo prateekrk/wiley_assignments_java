@@ -22,7 +22,7 @@ public class MainClass {
        u3.addresses.add(new Address("Gurgaon",201306));
        u3.addresses.add(new Address("Bengaluru",560001));
 
-       Map<Address,List<User>> map= new HashMap<>();
+       Map<Address,List<User>> map= new TreeMap<>();
 
        List<User> users= Arrays.asList(u1,u2,u3);
 
@@ -32,11 +32,19 @@ public class MainClass {
            addresses.addAll(u.addresses);
        }
 
-       for(Address a:addresses) {
-           map.put(a, users.stream().filter(u -> u.addresses.stream().anyMatch(a1 -> a1.equals(a))).collect(Collectors.toList()));
-           System.out.println(a.getCity() + " " + a.getZip());
+       for(Address a:addresses){
+           List<User> u0=users.stream().filter(u->u.addresses.stream().anyMatch(a1->a1.getZip()==a.getZip())).collect(Collectors.toList());
+            map.put(a,u0);
 
        }
-       System.out.println(map);
-     }
+
+       map.forEach((a,u)->System.out.println(a+"\n"+u));
+   }
 }
+//class sort implements  Comparator<Address>{
+//
+//    @Override
+//    public int compare(Address o1, Address o2) {
+//
+//    }
+//}

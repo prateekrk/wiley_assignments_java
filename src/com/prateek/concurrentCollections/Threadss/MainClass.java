@@ -6,6 +6,7 @@ import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.time.Instant;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 /**
@@ -118,7 +119,8 @@ public class MainClass {
         empThread1.start();
         empThread2.start();
 
-        empService.getIntegers().forEach(System.out::println);
+        empService.getIntegers().forEach(in-> System.out.print(in+" "));
+        System.out.println(empService.getIntegers().size());
     }
 }
 class ThreadA implements   Runnable{
@@ -172,12 +174,10 @@ class EmpService implements Runnable{
 
 
         for (int i = 100; i > 0 ; i--) {
-            if(!integers.contains(i)){
+            if (!integers.contains(i)) {
                 integers.add(i);
-                System.out.println(Thread.currentThread().getName() + " ---- "+i);
+//              System.out.println(Thread.currentThread().getName() + " ---- " + i);
             }
-
-
         }
     }
 

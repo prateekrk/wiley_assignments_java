@@ -37,7 +37,5 @@ public class MainClass {
 
         }
         map.forEach((a,u)->System.out.println(a+"\n"+u));
-
-
     }
 }

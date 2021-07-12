@@ -6,7 +6,7 @@ import java.util.List;
 public class Address implements Comparable {
     private String city;
     private int zip;
-    List<User> users=new ArrayList<>();
+//    List<User> users=new ArrayList<>();
     public Address(String city,int zip){
         this.city=city;
         this.zip=zip;

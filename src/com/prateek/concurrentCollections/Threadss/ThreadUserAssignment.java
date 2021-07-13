@@ -46,7 +46,7 @@ public class ThreadUserAssignment {
                                 +((details) d).getProject().toString());
                     }
                 }
-            }
+            }git
         });
         t.start();
         t.join();

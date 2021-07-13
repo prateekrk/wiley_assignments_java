@@ -4,7 +4,7 @@ import javax.xml.soap.Detail;
 import java.util.*;
 
 public class ThreadUserAssignment {
-    public static void main(String args[]){
+    public static void main(String args[]) throws InterruptedException{
         List<List<details>> userList=new ArrayList<>();
 
         User u1=new User(1,"user1");
@@ -19,15 +19,7 @@ public class ThreadUserAssignment {
 
         Set<Projects> projectsSet=new TreeSet<>();
 
-        Thread t1=new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Iterator i=user.iterator();
-                while(i.hasNext()){
-
-                }
-            }
-        });
+//
         Thread t=new Thread(new Runnable() {
             @Override
             public void run() {
@@ -56,10 +48,19 @@ public class ThreadUserAssignment {
                 }
             }
         });
-        t1.start();
+        t.start();
+        t.join();
         t2.start();
-
-
+//        for(User u:user){
+//
+//            for(Projects p:u.projects) {
+//                details d = new details(u.getU_id(),u.getU_name(),p.getP_id());
+//                d.project.add(p);
+//                List<details> details=new ArrayList<>();
+//                details.add(d);
+//                userList.add(details);
+//            }
+//        }
     }
 }
 class User{

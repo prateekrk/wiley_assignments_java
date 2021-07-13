@@ -1,7 +1,1 @@
-idea/
-*/.idea/
-
-*.iml
-out/
-
-*.class
+.idea/

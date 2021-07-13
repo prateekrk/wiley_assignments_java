@@ -1,7 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="118e82fc-c51f-4218-8211-d1e258f596dd" name="Default" comment="" />
+    <list default="true" id="118e82fc-c51f-4218-8211-d1e258f596dd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/banking/Account.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/banking/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/banking/Operations.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/banking/Transactions.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/Address.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/Employee.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/EmployeeSortByCity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/EmployeeSortBySalary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/budget/Address.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/budget/Employee1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/budget/Project.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/budget/SortBySalary.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/budget/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/budget/budget.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/ClassSets.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/MyComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/MyObject.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/SortType1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/SortType2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/SortType3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/Type.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/UserSet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/collections/map/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/AddNum.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ArrObj.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/EmpService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/MainClass$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/MainClass$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/MainClass$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/Projects.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadA.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadAssignment$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadAssignment$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadAssignment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadB.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadC.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/concurrentCollections/Threadss/details.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/employee_sort.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/Bikes.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/Car.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/Employee.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/EmployeeComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/EvenConsumer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/FilterEvenNums.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/MyComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/ShowRoom.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/StreamClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/StreamClass1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/UserString.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/com/prateek/streams/vehicle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/miniProject/Address.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/miniProject/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/miniProject/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/miniProject1/Address.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/miniProject1/MainClass.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/wiley_assignments/miniProject1/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.java" afterPath="$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,21 +82,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="381" column="12" lean-forward="false" selection-start-line="381" selection-start-column="12" selection-end-line="381" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="ThreadUserAssignment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#2313#2314#0" expanded="true" />
+                <element signature="e#2376#2377#0" expanded="true" />
+                <element signature="e#2404#2405#0" expanded="true" />
+                <element signature="e#2431#2432#0" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
+                <element signature="e#2493#2494#0" expanded="true" />
+                <element signature="e#2735#2736#0" expanded="true" />
+                <element signature="e#2798#2799#0" expanded="true" />
+                <element signature="e#2852#2853#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#2919#2920#0" expanded="true" />
+                <element signature="e#2946#2947#0" expanded="true" />
+                <element signature="e#2979#2980#0" expanded="true" />
+                <element signature="e#3008#3009#0" expanded="true" />
+                <element signature="e#3320#3321#0" expanded="true" />
+                <element signature="e#3346#3347#0" expanded="true" />
+                <element signature="e#3383#3384#0" expanded="true" />
+                <element signature="e#3415#3416#0" expanded="true" />
+                <element signature="e#3452#3453#0" expanded="true" />
+                <element signature="e#3484#3485#0" expanded="true" />
+                <element signature="e#3528#3529#0" expanded="true" />
+                <element signature="e#3564#3565#0" expanded="true" />
+                <element signature="e#3592#3593#0" expanded="true" />
+                <element signature="e#3619#3620#0" expanded="true" />
+                <element signature="e#3652#3653#0" expanded="true" />
+                <element signature="e#3681#3682#0" expanded="true" />
+                <element signature="e#3709#3710#0" expanded="true" />
+                <element signature="e#3736#3737#0" expanded="true" />
+                <element signature="e#3778#3779#0" expanded="true" />
+                <element signature="e#3808#3809#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="232" column="55" lean-forward="false" selection-start-line="232" selection-start-column="55" selection-end-line="232" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -116,6 +246,8 @@
         <option value="$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadAssignment.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.java" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -197,7 +329,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/prate/wiley_assignments/src/com/prateek/concurrentCollections/Threadss/ThreadAssignment.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -205,9 +337,9 @@
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="wiley_assignments" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -382,13 +514,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32707354" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.459069" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.459069" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -403,7 +536,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -428,8 +560,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/employee_sort.java" />
-    <entry file="file://$PROJECT_DIR$/src/employee_sort.java" />
     <entry file="file://$PROJECT_DIR$/src/User.java" />
     <entry file="file://$PROJECT_DIR$/src/com/prateek/budget.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -722,6 +852,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,13 +860,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="e#1767#1768#0" expanded="false" />
+            <element signature="e#1793#1794#0" expanded="false" />
+            <element signature="e#1839#1840#0" expanded="false" />
+            <element signature="e#1885#1886#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -768,18 +898,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="381" column="12" lean-forward="false" selection-start-line="381" selection-start-column="12" selection-end-line="381" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/com/prateek/concurrentCollections/Threadss/ThreadUserAssignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#2313#2314#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2404#2405#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2493#2494#0" expanded="true" />
+            <element signature="e#2735#2736#0" expanded="true" />
+            <element signature="e#2798#2799#0" expanded="true" />
+            <element signature="e#2852#2853#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#2919#2920#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3008#3009#0" expanded="true" />
+            <element signature="e#3320#3321#0" expanded="true" />
+            <element signature="e#3346#3347#0" expanded="true" />
+            <element signature="e#3383#3384#0" expanded="true" />
+            <element signature="e#3415#3416#0" expanded="true" />
+            <element signature="e#3452#3453#0" expanded="true" />
+            <element signature="e#3484#3485#0" expanded="true" />
+            <element signature="e#3528#3529#0" expanded="true" />
+            <element signature="e#3564#3565#0" expanded="true" />
+            <element signature="e#3592#3593#0" expanded="true" />
+            <element signature="e#3619#3620#0" expanded="true" />
+            <element signature="e#3652#3653#0" expanded="true" />
+            <element signature="e#3681#3682#0" expanded="true" />
+            <element signature="e#3709#3710#0" expanded="true" />
+            <element signature="e#3736#3737#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="true" />
+            <element signature="e#3808#3809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="232" column="55" lean-forward="false" selection-start-line="232" selection-start-column="55" selection-end-line="232" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -824,7 +1009,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

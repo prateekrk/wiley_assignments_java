@@ -1,6 +1,5 @@
 package com.prateek.concurrentCollections.Threadss;
 
-import javax.xml.soap.Detail;
 import java.util.*;
 
 public class ThreadUserAssignment {

@@ -157,7 +157,7 @@ class ThreadC implements   Runnable{
 class AddNum implements  Runnable{
     List<Integer> x;
     @Override
-    public void run() {
+    public void  run() {
         x=new ArrayList<>();
         for(int i=0;i<100;i++){
             x.add(i);

@@ -1,11 +1,14 @@
 package com.prateek.concurrentCollections.Threadss;
 
 import javax.security.sasl.SaslServer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class ThreadAssignment {
    int[] a;
     void fib(int n){
-       a=new int[n+1];
+        a=new int[n+1];
         int n1=0,n2=1,n3,i;
         a[0]=0;
         a[1]=1;
@@ -20,26 +23,26 @@ public class ThreadAssignment {
     public static void main(String args[]){
         ThreadAssignment t=new ThreadAssignment();
         int n=7;
-        t.fib(n);
-        for(int i=0;i<=n;i++){
-            System.out.print(t.a[i]+" ");
-        }
 
-        System.out.println();
+        //fibonacci series till nth term
+        t.fib(n);
+
+        //accumulate sum
         final int[] sum = {0};
 
+        //array list of sum
         ArrObj[] arr=new ArrObj[n+1];
 
-        //Thread 1 from sum of total nums in series
+
+//        Thread 1 from sum of total nums in series
 
         Thread tr=new Thread(new Runnable() {
             @Override
             public void run() {
-                for(int i=0;i<t.a.length;i++){
-                    sum[0] +=t.a[i];
-
-                }
-                System.out.println("Accumlate sum of fib series="+sum[0]);
+               for(int i=1;i<t.a.length;i++){
+                   sum[0]+=t.a[i];
+               }
+                System.out.println("Accumlate sum of fib series="+ sum[0]);
             }
         });
 
@@ -51,9 +54,10 @@ public class ThreadAssignment {
             public void run() {
                 System.out.println("Contents of accumulated array:");
                 for (int i=1;i<t.a.length;i++){
-                    arr[i]=new ArrObj(sum,t.a[i]);
+                    arr[i]=(new ArrObj(sum,t.a[i]));
                     sum+=t.a[i];
                     System.out.println(arr[i].toString());
+
                 }
             }
         });
@@ -74,10 +78,17 @@ class ArrObj{
         return a+b;
     }
 
+    public int getB() {
+        return b;
+    }
+
+    public int getA() {
+        return a;
+    }
+
     @Override
     public String toString() {
         return a+"+"+b+"="+calSum(a,b);
     }
-
-
 }
+

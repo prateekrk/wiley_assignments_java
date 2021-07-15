@@ -70,9 +70,9 @@ public class MainClass {
         Operations o=new Operations();
 
         o.credit(a1,5000);
-        o.debit(a1,5000,a1.getBalance());
+        o.debit(a1,5100,a1.getBalance());
         o.credit(a2,6000);
-        o.debit(a2,1000,a2.getBalance());
+        o.debit(a2,900,a2.getBalance());
         o.debit(a2,5201,a2.getBalance());
 
 

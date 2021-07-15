@@ -18,7 +18,7 @@ public class Transactions {
     }
 
     public String toString(){
-        return "Account : "+ ac.toString()+" Type :"+type+" Amount : "+amnt+ " Denominations : "+denominations;
+        return "Account : "+ ac.toString()+" Type :"+type+" Amount : Rs."+amnt+ " Denominations : "+denominations;
     }
 
 }

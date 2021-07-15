@@ -20,7 +20,6 @@ public class ThreadPoolClass {
 
 
         // create the instance
-        FibonacciPool object = new FibonacciPool();
 
 
         // create a thread
@@ -34,7 +33,6 @@ public class ThreadPoolClass {
         // use single thread
         //ExecutorService service = Executors.newSingleThreadExecutor();
 
-        ExecutorService service = Executors.newFixedThreadPool(2);
         // executor service facilitates the worker threads
 
 
@@ -57,11 +55,17 @@ public class ThreadPoolClass {
 //
 
         // we can return
+
+
+        List<Integer> a=new ArrayList<>();
+        FibonacciPool object = new FibonacciPool(a,8);
+        ExecutorService service = Executors.newFixedThreadPool(2);
+
         service.submit(object);
         // close of the thread pool
         // just a request to close of the link eventually
 
-        FibonacciService fibService = new FibonacciService();
+        FibonacciService fibService = new FibonacciService(a);
 
         Future<String> callFuture = service.submit(fibService); // task 1
 
@@ -76,60 +80,66 @@ public class ThreadPoolClass {
 
         Future<String>  callFuture1 = service.submit(fibService); // task 2
         // interrupt a running thread
-        
+
         callFuture1.cancel(true);
         service.shutdown();
     }
 }
 
 class FibonacciPool implements Runnable{
+    List<Integer> a=new ArrayList<>();
+    int n;
+    FibonacciPool(List<Integer> a,int n){
+        this.a=a;
+        this.n=n;
+    }
     int findFib(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        if (n == 1) {
-            return 1;
-        }
-        if (n == 2) {
+
+        if (n <=1) {
             return 1;
         }
         return findFib(n - 1) + findFib(n - 2);
     }
-    void process(){
-        for (int i = 0; i <=7; i++) {
-            try {
-                Thread.sleep(10);
-            }catch (InterruptedException ex){
-                ex.printStackTrace();
-            }
-            System.out.println(i+"th Fib : "+findFib(i));
+    void process(int n) throws InterruptedException{
+        synchronized (a){
+            a.add(findFib(n));
+            System.out.println(n+"th Fib :" + findFib(n));
+            a.notifyAll();
         }
+
     }
 
     @Override
     public void run() {
-        process();
+        for(int i=0;i<=n;i++){
+            try{
+                process(i);
+            }
+            catch  (Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 }
 
 class FibonacciService implements Callable<String> {
+    List<Integer> a=new ArrayList<>();
     int sum=0;
+    FibonacciService(List<Integer> a){
+        this.a=a;
+    }
     int findFib(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        if (n == 1) {
+
+        if (n <= 1) {
             return 1;
         }
-        if (n == 2) {
-            return 1;
-        }
+
         return findFib(n - 1) + findFib(n - 2);
     }
     @Override
     public String call() {
         StringBuilder response = new StringBuilder();
-        for (int i = 0; i <=7; i++) {
+        for (int i = 0; i <=a.size(); i++) {
             try{
                 Thread.sleep(10);
             }catch (InterruptedException ex){

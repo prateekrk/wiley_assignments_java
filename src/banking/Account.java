@@ -1,10 +1,15 @@
 package banking;
 
-public class Account {
-    int acId;
-    double balance;
+import java.util.ArrayList;
+import java.util.List;
 
-    Account(int acId){
+public class Account {
+    private int acId;
+    private double balance;
+    private Customer c;
+    List<Transactions> transactions=new ArrayList<>();
+    Account(Customer c,int acId){
+        this.c=c;
         this.acId=acId;
     }
     public double getBalance() {
@@ -12,10 +17,25 @@ public class Account {
     }
 
     public int getAcId() {
+
         return acId;
     }
 
     public void setBalance(double balance) {
+
         this.balance = balance;
+    }
+
+    public Customer getC() {
+        return c;
+    }
+
+    @Override
+    public String toString() {
+        return "CustID : "+c+" AccId : "+acId+" Balance : "+balance;
+    }
+
+    public List<Transactions> getTransactions() {
+        return transactions;
     }
 }

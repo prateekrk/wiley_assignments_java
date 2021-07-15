@@ -3,19 +3,22 @@ package banking;
 public class Transactions {
     private String type;
     private double amnt;
-    private int acId;
-    public Transactions(int acId,String type,double amnt){
+    private Account ac;
+    private double balance;
+    private  Denominations denominations;
+    public Transactions(Account a,String type,int amount,Denominations d ){
         this.type=type;
-        this.amnt=amnt;
-        this.acId=acId;
+        this.amnt=amount;
+        this.ac=a;
+        this.denominations = d;
     }
 
     int getAcId(){
-        return acId;
+        return ac.getAcId();
     }
 
     public String toString(){
-        return "Account : "+acId+" Type :"+type+" Amount : "+amnt;
+        return "Account : "+ ac.toString()+" Type :"+type+" Amount : "+amnt+ " Denominations : "+denominations;
     }
 
 }

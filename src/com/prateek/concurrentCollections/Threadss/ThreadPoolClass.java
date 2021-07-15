@@ -57,8 +57,8 @@ public class ThreadPoolClass {
         // we can return
 
 
-        List<Integer> a=new ArrayList<>();
-        FibonacciPool object = new FibonacciPool(a,8);
+        List<Integer> a = new ArrayList<>();
+        FibonacciPool object = new FibonacciPool(a, 8);
         ExecutorService service = Executors.newFixedThreadPool(2);
 
         service.submit(object);
@@ -69,19 +69,24 @@ public class ThreadPoolClass {
 
         Future<String> callFuture = service.submit(fibService); // task 1
 
-        try{
+        try {
 
-            System.out.println("Sum Accumulation of fib series "+callFuture.get());
+            System.out.println("Sum Accumulation of fib series " + callFuture.get());
 
-        }catch (InterruptedException | ExecutionException ex){
+        } catch (InterruptedException | ExecutionException ex) {
             ex.printStackTrace();
         }
         //service.shutdown();
 
-        Future<String>  callFuture1 = service.submit(fibService); // task 2
+        Future<String> callFuture1 = service.submit(fibService); // task 2
         // interrupt a running thread
-
         callFuture1.cancel(true);
+
+        if (callFuture1.isCancelled()) {
+
+                System.out.println("cancelled ");
+            // interrupt a running thread
+        }
         service.shutdown();
     }
 }

@@ -113,10 +113,8 @@ class Fibonacci implements Runnable {
     }
 
     int findFib(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        if (n == 1) {
+
+        if (n <= 1) {
             return 1;
         }
         if (n == 2) {
@@ -172,7 +170,6 @@ class sum implements Runnable{
             System.out.println(num+" + "+s+" = "+(num+s));
             s+=num;
             a.notifyAll();
-
         }
     }
 

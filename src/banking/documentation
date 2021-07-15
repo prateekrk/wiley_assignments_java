@@ -1,16 +1,31 @@
 !---------------------------------DOCUMENTATION---------------------------------!
-*Class Account-> Integer account_id, double Balance.
 
-*Class Operations-> Credit(), Debit():
+*Class Customer-> custId, list<Accounts> getAccounts(),getCustID();
+
+*Class Account-> Integer account_id, double Balance, List<Transactions>,getBalance(),getAccountId().
+
+#Customer --------> Accounts 1-->many relation
+
+*Class Card-> card num, pin,setPin(),getPin();
+
+#Account----------> Card 1-->1 relation
+
+*Class Operations-> Credit(Account,balance,amount), Debit(Account,balance,amount),denomination(Amount):
       --Credit() get account_id from Account and add balance by credit amount
         And record it in transactions list
       --Debit() get account_id from Account and add balance by debit amount
         And record it in transactions list
+      --denomination() returns denominations that have been given
+
+*Class Denomination-> count of 50's,count 20's,count 10's,count 5's
+
+
 *Class Transactions ->
        --String transaction_type,Double amount,Integer account_id
        -- Constructor() model for transaction
 
 * Main class:
+       --Map of acount ,List<Transactions>
        --List of transactions
        --Accounts
        -- HashMap of Accounts

@@ -11,9 +11,9 @@ public class Operations {
     int deno10=0;
     void credit(Account a,int c){
         double balance= a.getBalance();
+        a.setBalance( balance+c);
         Transactions t=new Transactions(a,"credit : ",c,new Denominations((int)c/50,0));
         a.transactions.add(t);
-        a.setBalance( balance+c);
         MainClass.transactionMap.put(a,a.transactions);
     }
     void debit(Account a, int d,double balance){
@@ -27,9 +27,9 @@ public class Operations {
             System.out.println("Insufficient Balance");
             return;
         }
-            Transactions t = new Transactions(a, "debit : ", d,selectDenominations(d));
-            a.setBalance(balance - d);
-            a.transactions.add(t);
+        a.setBalance(balance - d);
+        Transactions t = new Transactions(a, "debit : ", d,selectDenominations(d));
+        a.transactions.add(t);
 
 
 

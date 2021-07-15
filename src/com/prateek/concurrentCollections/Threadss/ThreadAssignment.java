@@ -4,6 +4,7 @@ import javax.security.sasl.SaslServer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 public class ThreadAssignment {
 //   int[] a;
@@ -118,10 +119,10 @@ class Fibonacci implements Runnable {
         if (n == 1) {
             return 1;
         }
-        if(n==2){
+        if (n == 2) {
             return 1;
         }
-        return findFib(n-1) + findFib(n - 2);
+        return findFib(n - 1) + findFib(n - 2);
     }
 
     void add(int n) throws InterruptedException {
@@ -132,10 +133,6 @@ class Fibonacci implements Runnable {
             a.notifyAll();
         }
     }
-
-
-
-
     @Override
     public void run() {
         int i=0;
@@ -181,6 +178,7 @@ class sum implements Runnable{
 
     @Override
     public void run() {
+
         int i=0;
         while (i <= n) {
             try {

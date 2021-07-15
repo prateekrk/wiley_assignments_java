@@ -25,9 +25,10 @@
        -- Constructor() model for transaction
 
 * Main class:
-       --Map of acount ,List<Transactions>
+       --Map of account ,List<Transactions>
        --List of transactions
        --Accounts
        -- HashMap of Accounts
        --Operations
+!---------------------------------DOCUMENTATION---------------------------------!
 

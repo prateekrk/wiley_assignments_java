@@ -46,17 +46,13 @@ public class ConcurrentHashMapClass {
 
 
         executorService.execute(c.new AddElements1());
-        executorService.execute(c.new AddElements2());
-        executorService.execute(c.new AddElements3());
-        executorService.execute(c.new AddElements4());
-        executorService.execute(c.new AddElements5());
-        executorService.execute(c.new AddElements2());
 
         executorService.execute(c.new read());
 
-        executorService.shutdown();
+        executorService.execute(c.new StoreFile());
 
 //        System.out.println(c.concurrentHashMap);
+        executorService.shutdown();
 
 
     }
@@ -128,11 +124,11 @@ public class ConcurrentHashMapClass {
                 f1.createNewFile();
                 Properties properties = new Properties();
 
-                for (Map.Entry<Integer,String> entry : concurrentHashMap.entrySet()) {
-                    properties.put(entry.getKey(), entry.getValue());
-                }
+                for (Map.Entry<Integer, String> m : c.entrySet()){
+                    properties.put(String.valueOf(m.getKey()),c.get(m.getKey()));
+            }
 
-                properties.store(new FileOutputStream("C:/Users/prate/wiley_assignments/src/com/prateek/concurrentCollections/collections/rankings.txt"), null);
+                properties.store(new FileOutputStream("C:/Users/prate/wiley_assignments/src/com/prateek/concurrentCollections/collections/champions.properties"), "Winner of the driver championships with year");
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -140,7 +136,7 @@ public class ConcurrentHashMapClass {
         }
         @Override
         public void run() {
-
+            Store(concurrentHashMap);
         }
     }
 }

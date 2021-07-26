@@ -7,6 +7,7 @@ public class Account {
     private int acId;
     private double balance;
     private Customer c;
+    private  Card card;
     List<Transactions> transactions=new ArrayList<>();
     Account(Customer c,int acId){
         this.c=c;

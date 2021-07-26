@@ -44,10 +44,11 @@ public class MainClass {
 //                    .forEach(transactions1 -> System.out.println(transactions1.toString()));
 //        }
 
-
+//      Customer objects
         Customer c1=new Customer(1);
         Customer c2=new Customer(2);
 
+//      Account objects each customer with n-number of accounts
         Account a1=new Account(c1,11);
         a1.setBalance(50000);
         Account a2=new Account(c1,12);
@@ -56,6 +57,12 @@ public class MainClass {
         a3.setBalance(5000);
         Account a4=new Account(c2,21);
         a4.setBalance(8000);
+
+        //        Card Details/objects
+        Card card1=new Card(1801235878,1234,a1);
+        Card card2=new Card(1905423657,4562,a2);
+        Card card3=new Card(1026511778,4236,a3);
+        Card card4=new Card(1804154487,4133,a4);
 
         c1.accounts.add(a1);
         c1.accounts.add(a2);
@@ -75,13 +82,15 @@ public class MainClass {
         o.debit(a2,900,a2.getBalance());
         o.debit(a2,5201,a2.getBalance());
 
-
-
+//        Scanner sc=new Scanner(System.in);
+//        int choice =sc.nextInt();
+//        while(choice!=4){
+//            switch (choice)
+//        }
         for (Account a:transactionMap.keySet()) {
             System.out.println("-----------------------"+a.getAcId()+"-----------------------");
             transactionMap.get(a).forEach(System.out::println);
         }
-
     }
 }
 class AccountComparator implements Comparator<Account>{

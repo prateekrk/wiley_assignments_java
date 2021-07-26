@@ -128,7 +128,7 @@ public class ConcurrentHashMapClass {
                     properties.put(String.valueOf(m.getKey()),c.get(m.getKey()));
             }
 
-                properties.store(new FileOutputStream("C:/Users/prate/wiley_assignments/src/com/prateek/concurrentCollections/collections/champions.properties"), "Winner of the driver championships with year");
+                properties.store(new FileOutputStream("C:/Users/prate/wiley_assignments/src/com/prateek/concurrentCollections/collections/champions.properties",true), "Winner of the driver championships with year");
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -139,4 +139,10 @@ public class ConcurrentHashMapClass {
             Store(concurrentHashMap);
         }
     }
+}
+interface  interface1{
+    int add(int a,int b);
+}
+interface  interface2 extends  interface1{
+    int sub(int a,int b);
 }

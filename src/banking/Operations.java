@@ -59,4 +59,11 @@ public class Operations {
         }
         return  new Denominations(deno50,deno10);
     }
+
+    boolean validateCard(int n,int m){
+        if(n==m){
+            return true;
+        }
+        return false;
+    }
 }

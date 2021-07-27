@@ -69,9 +69,10 @@ public class LinkedList<E> {
     public void traverse() {
         Node currentNode=this.head;
         while(currentNode!=null) {
-            System.out.println(currentNode.data);
+            System.out.print(currentNode.data+" ");
             currentNode=currentNode.next;
         }
+        System.out.println();
     }
 
 //##################################################
@@ -96,6 +97,20 @@ public class LinkedList<E> {
             currentNode=currentNode.next;
         }
         System.out.println(freq);
+    }
+
+    void reverse(){
+        Node current=head;
+        Node current1=null;
+        Node temp;
+        while(current!=null){
+            temp=current.next;
+            current.next=current1;
+            current1=current;
+            current=temp;
+        }
+        head=current1;
+
     }
 }
 

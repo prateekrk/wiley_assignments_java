@@ -9,7 +9,8 @@ public class LinkedListMain {
         while(true) {
             System.out.println("1. Add Element ");
             System.out.println("2. Display List ");
-            System.out.println("3. Exit");
+            System.out.println("3. Display List ");
+            System.out.println("4. Exit");
             System.out.println("Enter Choice : ");
             int choice=sc.nextInt();
             switch(choice) {
@@ -22,6 +23,9 @@ public class LinkedListMain {
                     myLinkedList.traverse();
                     break;
                 case 3:
+                    myLinkedList.reverse();
+                    break;
+                case 4:
                     System.out.println("Thanks for creating link list");
                     System.exit(0);
             }

@@ -98,4 +98,20 @@ public class BinarySearchTree {
         return findMin(root);
     }
 
+    int height(Node root){
+       if(root==null){
+           return 0;
+       }
+       int depl=height(root.left);
+       int depr=height(root.right);
+
+       if(depl>depr){
+           return depl++;
+       }
+       else {
+          return  depr++;
+       }
+
+    }
+
 }

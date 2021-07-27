@@ -15,7 +15,10 @@ public class SelectionSort {
                 int temp=arr[min];
                 arr[min]=arr[i];
                 arr[i]=temp;
-
+            for(int z=0;z<n;z++){
+                System.out.print(arr[z]+" ");
+            }
+            System.out.println();
         }
     }
     public static void main(String args[]){

@@ -15,27 +15,28 @@ public class DoublyLinkedList<E extends Number> {
 
     void insertNode(E data){
         Node newNode=new Node(data);
-        newNode.next=null;
-        newNode.prev=null;
+
         if(head==null){
             head=newNode;
         }
         else{
             Node lastNode=head;
-            while(lastNode.next!=null){
+            while(lastNode.next!=head){
                 lastNode=lastNode.next;
             }
             lastNode.next=newNode;
             newNode.prev=lastNode;
+            newNode.next=head;
         }
     }
 
     void traverse(){
         Node current=head;
-        while(current!=null){
+       do{
             System.out.print(current.data+" ");
             current=current.next;
         }
+        while(current!=head);
         System.out.println();
     }
 
